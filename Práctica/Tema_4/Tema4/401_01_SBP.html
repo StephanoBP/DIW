@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 1</title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
+    <body>
+        <input type="button" value="ocultar item primer lista" id="boton1">
+        <h2>Lista 1</h2>
+        <ul id="lista1">
+            <li>Opción número 1</li>
+            <li>Opción número 2</li>
+            <li>Opción número 3</li>
+            <li>Opción número 4</li>
+        </ul>
+        <h2>Lista 2</h2>
+        <ul id="lista2">
+            <li>Opción número 1</li>
+            <li>Opción número 2</li>
+            <li>Opción número 3</li>
+            <li>Opción número 4</li>
+        </ul>
+        <script>
+            let cont=0;
+            $("#boton1").click(function(){
+                if(cont==0){
+                    $("#lista1").hide();
+                    cont++;
+                    $("#boton1").attr("value","Mostrar");
+                }else{
+                    $("#lista1").show();
+                    cont--;
+                    $("#boton1").attr("value","ocultar item primer lista");
+                }
+            });
+        </script>
+    </body>
+</html>

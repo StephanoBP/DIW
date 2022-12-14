@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 2</title>
+        <style>
+            .resaltado{
+                background-color: yellow;
+                display: inline;
+            }
+        </style>
+        <script>
+            let cont=0;
+            function resaltar(){
+                let texto = document.getElementById("texto").outerText;
+                if(cont==0){
+                    texto=texto.replace("Java,","<p class='resaltado'>Java,</p>").replace("C++,","<p class='resaltado'>C++,</p>").replace("C#,","<p class='resaltado'>C#,</p>")
+                    cont++;
+                    document.getElementById("boton").innerText="quitar resultado";
+                }else{
+                    texto=texto.replace("<p class='resaltado'>Java,</p>","Java,").replace("<p class='resaltado'>C++,</p>","C++,").replace("<p class='resaltado'>C#,</p>","C#,")
+                    cont--;
+                    document.getElementById("boton").innerText="ver resultado";
+                }
+                document.getElementById("texto").innerHTML=texto;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <p id="texto">Cuales de los siguientes lenguajes son orientados a objetos: Java, VB6, C++, C, C#, Cobol ?</p>
+        <button id="boton" onclick="resaltar()">ver resultado</button>
+    </body>
+</html>
