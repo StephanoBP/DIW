@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 3</title>
+        <style>
+            table{
+                display: inline-block;
+            }
+            td{
+                border: 1px black solid;
+            }
+            form{
+                display: inline-block;
+                top: 4%;
+                position: fixed;
+            }
+            .seleccionado{
+                background-color: yellow;
+            }
+        </style>
+        <script>
+            let contador=7,iden=0;
+            function seleccionar(id){
+                let doc=document.getElementById(id);
+                let cont=0;
+                for(let i=0;i<doc.childElementCount;i++){
+                    if(doc.children[i].getAttribute("class")!="seleccionado"){
+                        doc.children[i].setAttribute("class","seleccionado");
+                        cont++;
+                    }else{
+                        doc.children[i].setAttribute("class","");
+                    }
+                    if(cont!=0)doc.children[3].firstElementChild.textContent="Deseleccionar";
+                    else doc.children[3].firstElementChild.textContent="Seleccionar";
+                    
+                }
+            }
+            function modificar(id){
+                let doc1=document.getElementById(id);
+                let doc2=document.getElementsByTagName("input");
+                iden=id;
+                for(let i=0;i<3;i++){
+                    doc2[i].value=doc1.children[i].textContent;
+                }
+                doc2[3].value="Modificar"
+            }
+            function borrar(id){
+                let doc=document.getElementById(id);
+                for(let i=0;i<doc.childElementCount-1;i++){
+                    doc.children[i].textContent="";
+                }
+            }
+            function insertarDatos(){   
+                let doc2=document.getElementsByTagName("input");
+                if(doc2[3].value=="Insertar"){
+                    let doc1=document.getElementById("tabla");
+                    let pantalla="<tr id='"+contador+"'>";
+                    for(let i=0;i<3;i++){
+                        pantalla+="<td>"+doc2[i].value+"</td>"
+                    }
+                    pantalla+="<td><button onclick='seleccionar("+contador+")'>Seleccionar</button><button onclick='borrar("+contador+")'>Borrar</button><button onclick='modificar("+contador+")'>Modificar</button></td>";
+                    contador++;
+                    pantalla+="</tr>";
+                    doc1.innerHTML+=pantalla;
+                }else{
+                    let doc1=document.getElementById(iden);
+                    for(let i=0;i<3;i++){
+                        doc1.children[i].textContent=doc2[i].value;
+                        doc2[i].value="";
+                    }
+                    doc2[3].value="Insertar";
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <table id="tabla">
+            <tr>
+                <td>Posición</td>
+                <td>Equipo</td>
+                <td>Puntos</td>
+                <td></td>
+            </tr>
+            <tr id="1">
+                <td>1</td>
+                <td>Real Oviedo</td>
+                <td>50</td>
+                <td><button onclick="seleccionar(1)">Seleccionar</button><button onclick="borrar(1)">Borrar</button><button onclick="modificar(1)">Modificar</button></td>
+            </tr>
+            <tr id="2">
+                <td>2</td>
+                <td>Osasuna</td>
+                <td>48</td>
+                <td><button onclick="seleccionar(2)">Seleccionar</button><button onclick="borrar(2)">Borrar</button><button onclick="modificar(2)">Modificar</button></td>
+            </tr>
+            <tr id="3">
+                <td>3</td>
+                <td>FC Barcelona</td>
+                <td>45</td>
+                <td><button onclick="seleccionar(3)">Seleccionar</button><button onclick="borrar(3)">Borrar</button><button onclick="modificar(3)">Modificar</button></td>
+            </tr>
+            <tr id="4">
+                <td>4</td>
+                <td>Real Madrid</td>
+                <td>40</td>
+                <td><button onclick="seleccionar(4)">Seleccionar</button><button onclick="borrar(4)">Borrar</button><button onclick="modificar(4)">Modificar</button></td>
+            </tr>
+            <tr id="5">
+                <td>5</td>
+                <td>FC Cuatrovientos</td>
+                <td>35</td>
+                <td><button onclick="seleccionar(5)">Seleccionar</button><button onclick="borrar(5)">Borrar</button><button onclick="modificar(5)">Modificar</button></td>
+            </tr>
+            <tr id="6">
+                <td>6</td>
+                <td>Sporting de Gijon</td>
+                <td>0</td>
+                <td><button onclick="seleccionar(6)">Seleccionar</button><button onclick="borrar(6)">Borrar</button><button onclick="modificar(6)">Modificar</button></td>
+            </tr>
+        </table>
+        <form method="post">
+            <fieldset>
+                Posición:<br/>
+                <input type="text" value=""/><br/>
+                Nombres:<br/>
+                <input type="text" value=""/><br/>
+                Puntos:<br/>
+                <input type="text" value=""/><br/>
+                <input type="button" onclick="insertarDatos()" name="insertar" value="Insertar"/>
+                <input type="reset" name="cancelar" value="Cancelar"/>
+            </fieldset>
+        </form>
+    </body>
+</html>

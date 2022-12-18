@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 1</title>
+        <style>
+            #lista1 #lista2{
+                visibility: hidden;
+            }
+            #lista #lista2{
+                visibility:visible;
+            }
+        </style>
+        <script>
+            function cambiarVisibilidad(id){
+                if(id=="lista"){
+                    document.getElementById(id).setAttribute('id','lista1');
+                    document.getElementById("h4").innerText="Para hacer visible la primera lista pulsa en cualquier parte de la lista";
+                }
+                if(id=="lista1"){
+                    document.getElementById(id).setAttribute('id','lista');
+                    document.getElementById("h4").innerText="Para ocultar la primera lista pulsa en cualquier parte de la lista";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <ul id="lista" onclick="javascript:cambiarVisibilidad(this.id);">
+            <li>Lista 1:</li>
+            <ul id="lista2">
+                <li>Tortilla</li>
+                <li>Jamón</li>
+                <li>Queso</li>
+            </ul>
+            <li>Lista 2:</li>
+            <ul>
+                <li>Coca Cola</li>
+                <li>Leche</li>
+                <li>Té</li>
+            </ul>
+        </ul>
+        <h4 id="h4">Para ocultar la primera lista pulsa en cualquier parte de la lista</h4>
+    </body>
+</html>
