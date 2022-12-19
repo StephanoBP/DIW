@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .focus{
+                background-color: aqua;
+            }
+            .sinfocus{
+                background-color: wheat;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post">
+            Nombre:
+            <input type="text" id="texto" onblur="console.log('acaba de activarse el onblur en el textbox')" onfocus="javascript:document.getElementById(this.id).setAttribute('class','focus');" onchange="confirm('¿Estás seguro de escribir:\n'+document.getElementById(this.id).value+'?')" onselect="javascript:document.getElementById('number').value++" maxlength="25" value="" placeholder="Escriba su nombre"><br/>
+            Comentario:
+            <textarea id="textarea" onblur="console.log('acaba de activarse el onblur en el textArea')" onfocus="javascript:document.getElementById(this.id).setAttribute('class','focus');" onchange="confirm('¿Estás seguro de escribir:\n'+document.getElementById(this.id).value+'?')" onselect="javascript:document.getElementById('number2').value++"  placeholder="Escriba sus comentarios" style="width:200px; height: 50px;"></textarea><br/>
+            Sexo:<br/>
+            <input type="radio" id="M" onchange="confirm('¿Estás seguro de pulsar en el botón Masculino?');" name="sexo"/>Masculino
+            <input type="radio" id="F" onchange="confirm('¿Estás seguro de pulsar en el botón Femenino?');" name="sexo" checked/>Femenino<br/>
+            Mayor de 18 años<input type="checkbox" onchange="confirm('¿Eres mayor de Edad?')"/><br/>
+            Estado Civil:<select>
+                <option>Soltera/o</option>
+                <option>Casada/o</option>
+                <option>Viuda/o</option>
+                <option>Estudiante</option>
+            </select><br/>
+            <p style="display: inline;">Número de veces que se ha usado el onselect en el textbox:</p><input type="number" id="number" min="0" max="99" value=""/><br/>
+            <p style="display: inline;">Número de veces que se ha usado el onselect en el textarea:</p><input type="number" id="number2" min="0" max="99" value=""/><br/>
+            <input type="submit" onsubmit="console.log('onSubmit')"/>
+            <input type="reset"/>
+        </form>
+        
+    </body>
+</html>

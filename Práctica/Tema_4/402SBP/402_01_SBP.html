@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <title>Ejercicio 1</title>
         <style>
-            #lista1 #lista2{
+            #lista1 ul #lista2{
                 visibility: hidden;
             }
-            #lista #lista2{
+            #lista ul #lista2{
                 visibility:visible;
             }
         </style>
@@ -27,8 +27,8 @@
     <body>
         <ul id="lista" onclick="javascript:cambiarVisibilidad(this.id);">
             <li>Lista 1:</li>
-            <ul id="lista2">
-                <li>Tortilla</li>
+            <ul>
+                <li id="lista2">Tortilla</li>
                 <li>Jamón</li>
                 <li>Queso</li>
             </ul>
