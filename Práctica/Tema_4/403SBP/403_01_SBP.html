@@ -6,13 +6,10 @@
             .focus{
                 background-color: aqua;
             }
-            .sinfocus{
-                background-color: wheat;
-            }
         </style>
     </head>
     <body>
-        <form method="post">
+        <form method="post" onsubmit="alert('Has pulsado el boton submit y se ha activado la función onsubmit')">
             Nombre:
             <input type="text" id="texto" onblur="console.log('acaba de activarse el onblur en el textbox')" onfocus="javascript:document.getElementById(this.id).setAttribute('class','focus');" onchange="confirm('¿Estás seguro de escribir:\n'+document.getElementById(this.id).value+'?')" onselect="javascript:document.getElementById('number').value++" maxlength="25" value="" placeholder="Escriba su nombre"><br/>
             Comentario:
@@ -29,7 +26,7 @@
             </select><br/>
             <p style="display: inline;">Número de veces que se ha usado el onselect en el textbox:</p><input type="number" id="number" min="0" max="99" value=""/><br/>
             <p style="display: inline;">Número de veces que se ha usado el onselect en el textarea:</p><input type="number" id="number2" min="0" max="99" value=""/><br/>
-            <input type="submit" onsubmit="console.log('onSubmit')"/>
+            <input type="submit" />
             <input type="reset"/>
         </form>
         
