@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0039)https://www.rememberthemilk.com/signup/ -->
+<html ng-app="rtm" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" class="ng-scope">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  @charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+<title>Remember The Milk - Registrarse</title>
+
+<meta name="theme-color" content="#0060bf">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="shortcut icon" href="https://www.rememberthemilk.com/favicon3.ico?1573573620">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script type="text/javascript" async="" src="./klk_files/analytics.js.descarga"></script><script src="./klk_files/jquery-1.12.4.min.js.descarga"></script>
+<script src="./klk_files/angular.1.6.9.min.js.descarga"></script>
+<script src="./klk_files/bootstrap.min.js.descarga"></script>
+<script src="./klk_files/rtm.compiled.js.descarga"></script>
+<script type="text/javascript">
+if (top.location != self.location) { top.location = self.location.href; }
+</script>
+
+<link rel="stylesheet" href="./Registrarse_files/site.css" type="text/css">
+<script async="" src="./Registrarse_files/js">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-235686425-1');
+</script>
+</head>
+
+<body class="rtm-signup ng-scope" ng-controller="rtm.NavController as nav" ng-class="{&#39;show-top-mobile-nav&#39;: nav.showTopMobileNav, &#39;show-left-mobile-nav&#39;: nav.showLeftMobileNav}">
+
+
+
+<main class="rtm-main-dual container-fluid">
+  <section class="row">
+    <article class="col-sm-6 hidden-xs">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-offset-3 col-sm-offset-1">
+            <a class="rtm-top-nav-logo-white" href="https://www.rememberthemilk.com/"></a>
+            <div class="rtm-signup-people">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="rtm-signup-person-1"></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="rtm-signup-person-2"></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="rtm-signup-person-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h2>¡Únete a millones de personas cada vez más organizadas y productivas!</h2>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="col-sm-6 col-xs-12">
+      <div>
+        <a class="rtm-top-nav-logo-blue hidden-sm hidden-md hidden-lg" href="https://www.rememberthemilk.com/"></a>
+        <a class="btn btn-info" href="https://www.rememberthemilk.com/login/">Iniciar sesión</a>
+
+<div ng-controller="rtm.SignupController as signup" class="ng-scope">
+
+<form ng-mousedown="signup.onMouseDown($event)" ng-submit="signup.onSubmit($event)" name="signup.form" autocomplete="off" method="post" action="" novalidate="" rtm-focus-empty-input="" class="ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength ng-valid-email ng-valid-pattern ng-valid-minlength ng-valid-differ-from">
+  <input type="hidden" name="XSRF-TOKEN" value="760042c3b397b6e44f568c48218d795f42b2ab9f74b4282cc8aea0d8a1bce56b" autocomplete="off">
+  <h3>
+          Regístrate gratis.      </h3>
+
+  
+  <div class="form-group" ng-class="{&#39;has-error&#39;: signup.isFieldInvalid(signup.form.firstname)}">
+    <input ng-model-options="{updateOn: &#39;blur&#39;}" type="text" maxlength="100" class="form-control input-lg ng-pristine ng-empty ng-invalid ng-invalid-required ng-valid-maxlength ng-touched" name="firstname" value="" placeholder="Nombre" ng-model="signup.firstname" rtm-server-error="" required="">
+    <div class="help-block">
+      Nombre requerido    </div>
+  </div>
+
+  <div class="form-group" ng-class="{&#39;has-error&#39;: signup.isFieldInvalid(signup.form.lastname)}">
+    <input ng-model-options="{updateOn: &#39;blur&#39;}" type="text" maxlength="100" class="form-control input-lg ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength" name="lastname" ng-model="lastname" value="" placeholder="Apellido" required="" rtm-server-error="">
+    <div class="help-block">
+      Se requiere introducir Apellidos    </div>
+  </div>
+
+  <div class="form-group" ng-class="{&#39;has-error&#39;: signup.isFieldInvalid(signup.form.origin)}">
+    <input ng-model-options="{updateOn: &#39;blur&#39;}" type="text" maxlength="100" minlength="3" class="form-control input-lg ng-pristine ng-empty ng-invalid ng-invalid-required ng-valid-maxlength ng-touched" name="origin" value="" placeholder="Origen" ng-model="signup.origin" rtm-server-error="" required="">
+    <div class="help-block">
+      Origen requerido   </div>
+  </div>
+
+  <div class="form-group" ng-class="{&#39;has-error&#39;: signup.isFieldInvalid(signup.form.fechaSalida)}">
+    <input ng-model-options="{updateOn: &#39;blur&#39;}" type="date" class="form-control input-lg ng-pristine ng-empty ng-invalid ng-invalid-required ng-valid-maxlength ng-touched" name="fechaSalida" value="" placeholder="Fecha de Salida" ng-model="signup.fechaSalida" rtm-server-error="" required="">
+    <div class="help-block">
+      Fecha de Salida requerido    </div>
+  </div>
+
+  <div class="form-group" ng-class="{&#39;has-error&#39;: signup.isFieldInvalid(signup.form.destiny)}">
+    <input ng-model-options="{updateOn: &#39;blur&#39;}" type="text" maxlength="100" minlength="3" class="form-control input-lg ng-pristine ng-empty ng-invalid ng-invalid-required ng-valid-maxlength ng-touched" name="destiny" value="" placeholder="Destino" ng-model="signup.destiny" rtm-server-error="" required="">
+    <div class="help-block">
+      Destino requerido    </div>
+  </div>
+
+  <div class="form-group" ng-class="{&#39;has-error&#39;: signup.isFieldInvalid(signup.form.fechaLlegada)}">
+    <input ng-model-options="{updateOn: &#39;blur&#39;}" type="date" class="form-control input-lg ng-pristine ng-empty ng-invalid ng-invalid-required ng-valid-maxlength ng-touched" name="fechaLlegada" value="" placeholder="Fecha de Llegada" ng-model="signup.fechaLlegada" rtm-server-error="" required="">
+    <div class="help-block">
+      Fecha de Llegada requerido    </div>
+  </div>
+  
+  <div class="form-group" ng-class="{&#39;has-error&#39;: signup.isFieldInvalid(signup.form.email)}">
+    <input type="email" maxlength="50" class="form-control input-lg ng-pristine ng-empty ng-valid-email ng-invalid ng-invalid-required ng-valid-maxlength ng-touched" name="email" ng-model="email" ng-model-options="{ updateOn: &#39;default blur&#39;, debounce: { default: 250, blur: 0 } }" value="" placeholder="Dirección de correo electrónico" required="" rtm-email-unique="" rtm-server-error="">
+    <div class="help-block">
+      <span ng-show="signup.form.email.$error.required">Dirección de correo no válida</span>
+      <span ng-show="signup.form.email.$error.email" class="ng-hide">Dirección de correo no válida</span>
+      <span ng-show="signup.form.email.$error.emailUnique || signup.form.email.$pending.emailUnique" class="ng-binding ng-hide">
+         está en uso.      </span>
+    </div>
+  </div>
+  
+  <input ng-class="{&#39;rtm-signup-btn-rtm-disabled&#39;:signup.hasInvalidField()}" name="signup" type="submit" class="btn btn-primary btn-lg btn-block rtm-signup-btn-rtm" value="¡Date de alta!">
+
+  
+    <div class="rtm-signup-divider">
+      <hr>
+      <span>O</span>
+    </div>
+    <a href="https://www.rememberthemilk.com/auth?fbauth=1&amp;tpl=app/signup/existing&amp;secure=1" class="btn btn-lg btn-block rtm-signup-btn-facebook">
+      <div>
+        <i class="fa fa-facebook-official"></i>
+      </div>
+      Iniciar sesión con Facebook    </a>
+    <a href="https://www.rememberthemilk.com/auth?gauth=1&amp;tpl=app/signup/existing&amp;secure=1" class="btn btn-lg btn-block rtm-signup-btn-google">
+      <div></div>
+      Regístrate con Google    </a>
+    <a href="https://www.rememberthemilk.com/auth?appleauth=1&amp;tpl=app/signup/existing&amp;secure=1" class="btn btn-lg btn-block rtm-signup-btn-apple
+              ">
+      <div><svg xmlns="http://www.w3.org/2000/svg" height="48px" width="22px" viewBox="9 0 21 44"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path fill="#fff" fill-rule="nonzero" d="M19.8196726,13.1384615 C20.902953,13.1384615 22.2608678,12.406103 23.0695137,11.4296249 C23.8018722,10.5446917 24.3358837,9.30883662 24.3358837,8.07298156 C24.3358837,7.9051494 24.3206262,7.73731723 24.2901113,7.6 C23.0847711,7.64577241 21.6353115,8.4086459 20.7656357,9.43089638 C20.0790496,10.2090273 19.4534933,11.4296249 19.4534933,12.6807374 C19.4534933,12.8638271 19.4840083,13.0469167 19.4992657,13.1079466 C19.5755531,13.1232041 19.6976128,13.1384615 19.8196726,13.1384615 Z M16.0053051,31.6 C17.4852797,31.6 18.1413509,30.6082645 19.9875048,30.6082645 C21.8641736,30.6082645 22.2761252,31.5694851 23.923932,31.5694851 C25.5412238,31.5694851 26.6245041,30.074253 27.6467546,28.6095359 C28.7910648,26.9312142 29.2640464,25.2834075 29.2945613,25.2071202 C29.1877591,25.1766052 26.0904927,23.9102352 26.0904927,20.3552448 C26.0904927,17.2732359 28.5316879,15.8848061 28.6690051,15.7780038 C27.0517133,13.4588684 24.5952606,13.3978385 23.923932,13.3978385 C22.1082931,13.3978385 20.6283185,14.4963764 19.6976128,14.4963764 C18.6906198,14.4963764 17.36322,13.4588684 15.7917006,13.4588684 C12.8012365,13.4588684 9.765,15.9305785 9.765,20.5993643 C9.765,23.4982835 10.8940528,26.565035 12.2824825,28.548506 C13.4725652,30.2268277 14.5100731,31.6 16.0053051,31.6 Z"></path></g>
+</svg>
+</div>
+      Registrarse con Apple    </a>
+
+  
+  <div class="rtm-signup-terms">
+    Al proceder a crear tu cuenta y usar Remember The Milk, aceptas nuestras <a target="_blank" href="https://www.rememberthemilk.com/help/terms.rtm">Condiciones de uso</a> y <a target="_blank" href="https://www.rememberthemilk.com/help/privacy.rtm">Política de privacidad</a>. Si no aceptas, no puede utilizar Remember The Milk.  </div>
+
+</form>
+
+</div>
+      </div>
+    </article>
+  </section>
+</main>
+
+<script>
+(function() {
+var annotated = window.location.href.indexOf("genius.it/") !== -1;
+if (annotated) {
+  window.location.href = window.location.href.replace("genius.it/", "")
+}
+})();
+</script>
+<script>
+  rtmLoad();
+</script>
+<script type="text/javascript">
+if ('_rtm_start_rtt' in window) {
+(function(){function b(){window[c]=(new Date).getTime();var a=document.createElement("script");a.setAttribute("type","text/javascript");a.setAttribute("async","true");a.setAttribute("src","\/js\/rtt.6.js?1525298820");document.body.appendChild(a)}var c="_rtm_end_rtt",d=window.onload;window.onload=typeof window.onload!="function"?b:function(){d();b()}})();
+}
+</script>
+
+
+</body>
+</html>
