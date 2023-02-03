@@ -1,0 +1,14 @@
+La especificación oficial de Flexbox se encuentra en la Web del W3C y se llama "CSS Flexible Box Layout Module Level 1". Su estado actual es 
+"Candidate Recommendation". Esto significa que ha sido probado y aprobado por el consorcio W3C y se considera listo para la implementación en 
+los navegadores. Sin embargo, es posible que aún haya algunos cambios y ajustes en la especificación en el futuro.
+El estado "Working Draft" significa que la especificación está en desarrollo y aún no ha sido aprobada por el consorcio W3C. 
+No es un estado oficial para la especificación de Flexbox en la web del W3C, ya que su estado actual es "Candidate Recommendation".ç
+
+Según CanIUse, Flexbox tiene un nivel de soporte muy alto en los navegadores modernos. El soporte incluye Google Chrome, Mozilla Firefox, Apple 
+Safari, Microsoft Edge, y otros. Hay algunas diferencias en la implementación entre los navegadores, pero en general, Flexbox es compatible en la 
+mayoría de los navegadores actuales. Sin embargo, es posible que haya algunos navegadores antiguos o móviles que no tengan soporte completo para Flexbox, por lo que es importante verificar la compatibilidad antes de usar Flexbox en un proyecto.
+
+
+
+
+
