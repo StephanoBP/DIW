@@ -1,0 +1,270 @@
+{
+  "id": "bb8a0818-1ae0-41fc-943e-439bdec9db8f",
+  "version": "2.0",
+  "name": "602SBP",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "e211efdb-fda6-4fd6-b22c-08877c5cb20e",
+    "name": "1er Ejercicio",
+    "commands": [{
+      "id": "3f32482a-1160-4f05-8f89-5e5966d33148",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "affd0b52-2bbf-4092-9e03-b81d2462ccc0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "481bd559-05d2-4fcd-9058-88bcc881a3ba",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "stephano"
+    }, {
+      "id": "ac827232-5121-43ae-9010-371c16b0c182",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "8b85c9bc-931c-4ffd-a697-9c7a76b7dd28",
+    "name": "2do Ejercicio",
+    "commands": [{
+      "id": "d1e2e484-2123-4ddf-8777-2d13636778fb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef254865-f75f-488f-afbc-fdbdcedbecd7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c54cd17-e326-411a-a943-e23f267ae59d",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6e9535b-0553-41e4-a66f-4a33460030ef",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "edreams"
+    }, {
+      "id": "f64bc098-b845-418d-b735-86301b3f6e0e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "250c0227-a15b-428a-8c48-b218c1f50cd1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Vuelos Baratos",
+      "targets": [
+        ["linkText=Vuelos Baratos", "linkText"],
+        ["css=.dmenKe .l", "css:finder"],
+        ["xpath=//a[contains(text(),'Vuelos Baratos')]", "xpath:link"],
+        ["xpath=//div[@id='rso']/div/div/div/div/table/tbody/tr/td/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.edreams.es/vuelos/baratos/')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Vuelos Baratos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf346233-bafc-483f-a537-9657b3f04822",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Vuelos Baratos",
+      "targets": [
+        ["linkText=Vuelos Baratos", "linkText"],
+        ["css=.dmenKe .l", "css:finder"],
+        ["xpath=//a[contains(text(),'Vuelos Baratos')]", "xpath:link"],
+        ["xpath=//div[@id='rso']/div/div/div/div/table/tbody/tr/td/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.edreams.es/vuelos/baratos/')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Vuelos Baratos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf78e30d-b321-4ab0-8e02-503a3b033009",
+      "comment": "",
+      "command": "click",
+      "target": "id=departure0_value",
+      "targets": [
+        ["id=departure0_value", "id"],
+        ["name=departure0Input", "name"],
+        ["css=#departure0_value", "css:finder"],
+        ["xpath=//input[@id='departure0_value']", "xpath:attributes"],
+        ["xpath=//div[@id='searchBox']/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d5d7f05-5231-489b-9d04-f8c7d29844a6",
+      "comment": "",
+      "command": "type",
+      "target": "id=departure0_value",
+      "targets": [
+        ["id=departure0_value", "id"],
+        ["name=departure0Input", "name"],
+        ["css=#departure0_value", "css:finder"],
+        ["xpath=//input[@id='departure0_value']", "xpath:attributes"],
+        ["xpath=//div[@id='searchBox']/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "madrid"
+    }, {
+      "id": "83a57c46-e1e1-470d-8ee0-4289e387ae1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.autocomplete-title_country",
+      "targets": [
+        ["css=.autocomplete-title_country", "css:finder"],
+        ["xpath=//div[@id='departure0_dropdown']/div[2]/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'España')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6ef5754-5ed1-4f92-903a-34d822dd23fa",
+      "comment": "",
+      "command": "click",
+      "target": "id=arrival0_value",
+      "targets": [
+        ["id=arrival0_value", "id"],
+        ["name=arrival0Input", "name"],
+        ["css=#arrival0_value", "css:finder"],
+        ["xpath=//input[@id='arrival0_value']", "xpath:attributes"],
+        ["xpath=//div[@id='searchBox']/div[2]/div[2]/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25f97c7b-ba38-4020-ab68-f55f021e2bf3",
+      "comment": "",
+      "command": "type",
+      "target": "id=arrival0_value",
+      "targets": [
+        ["id=arrival0_value", "id"],
+        ["name=arrival0Input", "name"],
+        ["css=#arrival0_value", "css:finder"],
+        ["xpath=//input[@id='arrival0_value']", "xpath:attributes"],
+        ["xpath=//div[@id='searchBox']/div[2]/div[2]/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "bard"
+    }, {
+      "id": "bc4e6529-24b0-41e0-b388-73b3a16a03a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.autocomplete-row:nth-child(2) .autocomplete-title_city",
+      "targets": [
+        ["css=.autocomplete-row:nth-child(2) .autocomplete-title_city", "css:finder"],
+        ["xpath=//div[@id='arrival0_dropdown']/div[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Bardera')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f17196ae-0290-4df1-929d-42bad8513c5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#departure-date0 > .oneLinerSearchBox-box",
+      "targets": [
+        ["css=#departure-date0 > .oneLinerSearchBox-box", "css:finder"],
+        ["xpath=//div[@id='departure-date0']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be5ff36d-d8b9-4677-9cdf-e8cbdeffe59e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datepicker-month:nth-child(2) tr:nth-child(3) > .datepicker-day:nth-child(2) > .datepicker-day-text",
+      "targets": [
+        ["css=.datepicker-month:nth-child(2) tr:nth-child(3) > .datepicker-day:nth-child(2) > .datepicker-day-text", "css:finder"],
+        ["xpath=//div[@id='searchBox']/div[2]/div/div/div/div[2]/table/tbody/tr[3]/td[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/table/tbody/tr[3]/td[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "052e3392-324a-4302-9fbd-2a27d1ac5d26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datepicker-month:nth-child(2) tr:nth-child(4) > .datepicker-day:nth-child(7) > .datepicker-day-text",
+      "targets": [
+        ["css=.datepicker-month:nth-child(2) tr:nth-child(4) > .datepicker-day:nth-child(7) > .datepicker-day-text", "css:finder"],
+        ["xpath=//div[@id='searchBox']/div[2]/div/div/div/div[2]/table/tbody/tr[4]/td[7]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/table/tbody/tr[4]/td[7]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba90fa14-0d21-4548-9510-761a94934d97",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-btn",
+      "targets": [
+        ["id=search-btn", "id"],
+        ["css=#search-btn", "css:finder"],
+        ["xpath=//button[@id='search-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='searchBox']/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar vuelos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5f56abc4-0061-427f-bfd8-7da0cad8dc42",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e211efdb-fda6-4fd6-b22c-08877c5cb20e"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
